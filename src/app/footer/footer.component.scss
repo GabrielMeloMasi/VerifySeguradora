@@ -1,0 +1,35 @@
+$azul-verify: rgb(28, 31, 74);
+$rosa-verify: rgb(233, 41, 94);
+footer {
+  width: 100%;
+  background-color: $azul-verify;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto; /* Garante que o rodapé seja empurrado para o final do conteúdo */
+}
+  
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+  
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid $rosa-verify; /* Cor do contorno */
+  color: $rosa-verify; /* Cor do ícone */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-button:hover {
+  background-color: $rosa-verify; /* Cor de fundo ao passar o mouse */
+  color: #1A1A3D; /* Cor do ícone ao passar o mouse */
+}
+

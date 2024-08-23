@@ -24,6 +24,7 @@ html, body {
   }
   
   form {
+    border: 1px solid $rosa-verify;
     width: 100%;
     max-width: 600px; /* Define uma largura máxima para o formulário */
     padding: 20px;
@@ -49,7 +50,7 @@ html, body {
   }
   
   input, textarea {
-    width: 100%; /* Ajusta o tamanho do input para ocupar 100% da largura do contêiner */
+    width: 92%; /* Ajusta o tamanho do input para ocupar 100% da largura do contêiner */
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
@@ -86,36 +87,4 @@ html, body {
     font-size: 14px;
   }
   
-  footer {
-    width: 100%;
-    background-color: $azul-verify;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: auto; /* Garante que o rodapé seja empurrado para o final do conteúdo */
-  }
-    
-  .social-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-    
-  .social-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 2px solid $rosa-verify; /* Cor do contorno */
-    color: $rosa-verify; /* Cor do ícone */
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .social-button:hover {
-    background-color: $rosa-verify; /* Cor de fundo ao passar o mouse */
-    color: #1A1A3D; /* Cor do ícone ao passar o mouse */
-  }
   

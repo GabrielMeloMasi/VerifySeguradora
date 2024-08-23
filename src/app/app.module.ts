@@ -19,6 +19,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faLinkedinIn, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { QuoteComponent } from './quote/quote.component';
 
 
 @NgModule({
@@ -29,7 +32,10 @@ import { faFacebookF, faLinkedinIn, faTwitter, faInstagram, faYoutube } from '@f
     LoginComponent,
     AboutComponent,
     ContactComponent,
-    SidebarComponent
+    SidebarComponent,
+    FooterComponent,
+    HeaderComponent,
+    QuoteComponent
   ],
   imports: [
     BrowserModule,

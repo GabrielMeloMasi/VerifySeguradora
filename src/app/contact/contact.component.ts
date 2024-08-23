@@ -1,5 +1,4 @@
 import { Component, OnInit} from '@angular/core';
-import { faFacebookF, faLinkedinIn, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-contact',
@@ -7,11 +6,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit{
-  faFacebookF = faFacebookF;
-  faLinkedinIn = faLinkedinIn;
-  faTwitter = faTwitter;
-  faInstagram = faInstagram;
-  faYoutube = faYoutube;
+
 
   contactForm!: FormGroup;
 
