@@ -3,8 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LoginComponent } from './login/login.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
+  {path: '',redirectTo:'/home', pathMatch:'full'},
+  {path:'about', component: AboutComponent},
+  {path:'contact', component: ContactComponent},
   {path:'home', component: HomePageComponent},
   {path: 'login', component: LoginComponent},
   {path:'**', component: PageNotFoundComponent}

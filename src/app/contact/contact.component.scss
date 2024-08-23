@@ -1,0 +1,121 @@
+$azul-verify: rgb(28, 31, 74);
+$rosa-verify: rgb(233, 41, 94);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: $azul-verify; /* Garante que o fundo azul seja aplicado a todo o documento */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Garante que o contêiner ocupe o espaço restante */
+    background-color: $azul-verify;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    box-sizing: border-box; /* Garante que padding e bordas não causem estouro de layout */
+  }
+  
+  form {
+    width: 100%;
+    max-width: 600px; /* Define uma largura máxima para o formulário */
+    padding: 20px;
+    background-color: $azul-verify;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: $rosa-verify;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%; /* Ajusta o tamanho do input para ocupar 100% da largura do contêiner */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: $rosa-verify;
+    outline: none;
+  }
+  
+  button {
+    width: 100%; /* Ajusta o botão para ocupar 100% da largura */
+    padding: 10px;
+    background-color: $rosa-verify;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: darken($rosa-verify, 10%);
+  }
+  
+  .error-message {
+    color: $rosa-verify;
+    font-size: 14px;
+  }
+  
+  footer {
+    width: 100%;
+    background-color: $azul-verify;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Garante que o rodapé seja empurrado para o final do conteúdo */
+  }
+    
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+    
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid $rosa-verify; /* Cor do contorno */
+    color: $rosa-verify; /* Cor do ícone */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-button:hover {
+    background-color: $rosa-verify; /* Cor de fundo ao passar o mouse */
+    color: #1A1A3D; /* Cor do ícone ao passar o mouse */
+  }
+  

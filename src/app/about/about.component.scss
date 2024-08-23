@@ -1,0 +1,65 @@
+$azul-verify: rgb(28, 31, 74);
+$rosa-verify: rgb(233, 41, 94);
+
+.about-section {
+    background-color: $azul-verify; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+  }
+  
+  .about-card {
+    background-color: $azul-verify; /* Cor do fundo do card */
+    border: 1px solid $rosa-verify; /* Borda rosa */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: left;
+  }
+  
+  .about-card img {
+    float: left;
+    margin-right: 20px;
+    width: 50px; /* Tamanho da logo */
+    height: auto;
+  }
+  
+  .about-card h2 {
+    color: $rosa-verify; /* Cor do texto do título */
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-card p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .about-footer {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .about-footer img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .about-footer p {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .about-card img {
+      float: none;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+  
+    .about-card {
+      text-align: center;
+    }
+  }
+  

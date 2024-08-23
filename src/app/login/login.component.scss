@@ -1,16 +1,42 @@
+$azul-verify: rgb(28, 31, 74);
+$rosa-verify: rgb(233, 41, 94);
+
+
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  height: 100%;
+    background-color: $rosa-verify;
+    .logo img {
+      background-color: $azul-verify;
+      position: fixed;
+      width: 50%;
+    }
+    mat-card {
+      width: 400px;
+      padding: 20px;
+    }
+    mat-card-title{
+      color: #fff;
+      text-align: center;
+    }
+    mat-form-field{
+      width: 100%;
+      height:80px;
+    }
+  
+    .forms-container mat-card{
+      margin-left: 65%;
+      margin-top: 8%;
+      position: fixed;
+      background-color: $azul-verify;
+    }
+    button {
+      width: 100%;
+      height: 50px;
+      background-color: black;
+      color: #fff;
+    }
   }
   
-  mat-card {
-    width: 400px;
-    padding: 20px;
-  }
   
-  button {
-    width: 100%;
-  }
+
   

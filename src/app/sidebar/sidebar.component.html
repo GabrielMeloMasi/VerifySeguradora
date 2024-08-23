@@ -1,0 +1,14 @@
+<div class="sidebar" [class.hidden]="isHidden">
+  <div class="sidebar-logo">
+    <img src="assets/3.png" alt="Verify Seguros Logo">
+  </div>
+  <br><br>
+  <nav class="sidebar-nav">
+    <ul>
+      <li><a routerLink="/home" routerLinkActive="active" (click)="toggleSidebar()">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active" (click)="toggleSidebar()">Quem Somos</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active" (click)="toggleSidebar()">Contato</a></li>
+    </ul>
+  </nav>
+</div>
+<button class="toggle-button" (click)="toggleSidebar()">☰</button>
