@@ -1,0 +1,116 @@
+$azul-verify: rgb(28, 31, 74);
+$rosa-verify: rgb(233, 41, 94);
+
+$primary-color: #3498db;
+$header-background: $rosa-verify;
+$text-color: #fff;
+
+.home-container {
+    height: 100%;
+    background-color: $azul-verify;
+    color: #fff;
+}
+
+.site-header {
+    background-color: $header-background;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .logo img {
+      position: absolute;
+      width: 100px;
+      margin-left: -60px;
+      margin-top: -50px;
+    }
+
+    .navigation {
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: $text-color;
+                    font-weight: bold;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: lighten($text-color, 20%);
+                    }
+                }
+            }
+        }
+    }
+
+    .auth-buttons {
+        display: flex;
+        gap: 10px;
+
+        .btn {
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 25px; // Tornando os botões mais arredondados
+            transition: background-color 0.3s, border-color 0.3s;
+
+            &.login-btn {
+                background-color: $rosa-verify; // Mesma cor do header
+                color: #fff; // Cor branca para o texto
+                border-color: #fff; // Borda branca para mais destaque
+
+                &:hover {
+                    background-color: lighten($rosa-verify, 10%); // Clarear o fundo ao passar o mouse
+                    border-color: lighten($rosa-verify, 10%);
+                }
+            }
+
+            &.register-btn {
+                background-color: #fff; // Botão de registro com fundo branco
+                color: $azul-verify; // Texto azul para contraste
+                border-color: $azul-verify; // Borda azul para dar mais estrutura
+
+                &:hover {
+                    background-color: lighten(#fff, 5%); // Clarear o fundo ao passar o mouse
+                    border-color: lighten($azul-verify, 10%);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation {
+        margin-top: 10px;
+        ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .auth-buttons {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+
+        .btn {
+            width: 100%;
+        }
+    }
+}
